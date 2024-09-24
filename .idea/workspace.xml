@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/contato.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/Logo.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/Logo.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/Logo_page-0001.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/Logo_page-0001.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/download.jfif" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/download.jfif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/vinho.jfif" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/vinho.jfif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pag.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contato.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pag.html" afterDir="false" />
+    </list>
+    <list id="d898136c-b8b6-4277-b85e-3ec5b29cd3ec" name="Changes by 2_DEV" comment="">
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/main.py" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/templates/index.html">
+      <ranges>
+        <range start1="5" end1="7" start2="5" end2="7" changelist="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" />
+        <range start1="11" end1="12" start2="11" end2="12" changelist="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" />
+        <range start1="19" end1="21" start2="19" end2="20" changelist="d898136c-b8b6-4277-b85e-3ec5b29cd3ec" />
+        <range start1="26" end1="29" start2="25" end2="28" changelist="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" />
+        <range start1="30" end1="30" start2="29" end2="38" changelist="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" />
+      </ranges>
+    </file>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2mVx6wpNQKvqNVLcpsa7cnmatu8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\2_DEV\Desktop\Site_Adm\static" />
+      <recent name="C:\Users\2_DEV\Desktop\Site_Adm\public\css" />
+      <recent name="C:\Users\2_DEV\Desktop\Site_Adm\template" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-48aec45f0201-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17011.127" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" name="Changes" comment="" />
+      <created>1727175373032</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727175373032</updated>
+    </task>
+    <servers />
+  </component>
+</project>

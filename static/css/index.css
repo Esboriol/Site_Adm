@@ -1,19 +1,25 @@
 body {
-    overflow-x: hidden; /* Evita arrasto horizontal */
-    background-color: aliceblue;
+    background-color: white;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-h1 {
-    color: white;
-    background-color: rgb(0, 0, 0);
-    text-align: left;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 5px;
+h2, h3 {
     margin: 0;
+}
+
+h3 {
+    color: #722F37;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    margin: 0; /* Remove a margem padrão do parágrafo */
+    color: #333;
 }
 
 .primeiro {
@@ -51,59 +57,69 @@ h1 {
 }
 
 .logo {
-    max-width: 100px;
     height: auto;
+    max-width: 100px;
     width: 90px;
     cursor: pointer;
+}
+
+/* Estilização das seções */
+.section {
+    padding: 30px 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    background-color: #F8F8F8; /* Fundo leve para as caixinhas */
+    border: 1px solid #ddd; /* Borda sutil */
+    border-radius: 8px; /* Canto arredondado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    max-width: 600px; /* Largura máxima das caixinhas */
+    margin: 20px auto; /* Centraliza horizontalmente e adiciona espaço entre elas */
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .logo-container {
     display: flex; /* Usa flexbox para alinhar os itens */
     align-items: center; /* Alinha verticalmente os itens no centro */
     justify-content: space-between; /* Espaça os itens */
-    margin-bottom: 01px;
+    margin-bottom: 1px;
     padding: 20px;
     background-color: #722F37;
 }
 
-.menu-toggle {
-    display: none; /* Oculta o botão por padrão */
-    flex-direction: column; /* Alinha as barras em coluna */
-    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
-    position: absolute; /* Posiciona em relação ao contêiner pai */
-    top: 20px; /* Distância do topo */
-    right: 20px; /* Distância da direita */
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin-right: 50px; /* Ajuste para mover os links horizontalmente à direita */
 }
 
-.menu-toggle .bar {
-    height: 3px; /* Altura das barras */
-    width: 25px; /* Largura das barras */
-    background-color: white; /* Cor das barras */
-    margin: 3px 0; /* Espaçamento entre as barras */
+.cardapio, .contato {
+    color: rgb(225, 224, 224);
+    text-decoration: none;
+    margin: 0 15px; /* Margem entre os links */
+    font-family: "Nunito Sans", sans-serif, helvetica, arial;
 }
 
-.nav-list {
-    display: none; /* Oculta o menu por padrão */
-    position: absolute;
-    top: 60px; /* Distância do topo */
-    left: 50%; /* Posiciona o menu no meio da tela */
-    transform: translateX(-50%); /* Centraliza horizontalmente */
-    background-color: #722f37;
-    padding: 5px; /* Diminui o preenchimento interno do menu */
-    border-radius: 5px;
-    font-size: 18px; /* Aumenta o tamanho da fonte */
-    z-index: 1000; /* Certifique-se de que o menu esteja acima de outros elementos */
-    width: auto; /* Ajusta a largura do menu */
+.logo-wrapper {
+    flex: 0 0 auto; /* Garante que a logo não cresça ou encolha */
 }
 
-.nav-list li {
-    margin: 3px 0;
-    padding: 5px; /* Opcional: diminui o preenchimento interno dos itens */
+.separator {
+    width: 2px; /* Largura da barra */
+    height: 20px; /* Altura da barra */
+    background-color: white; /* Cor da barra */
+    margin: 0 15px; /* Margem entre os links */
+    display: inline-block; /* Faz a barra se comportar como um bloco inline */
 }
 
-.nav-list.active {
-    display: block; /* Mostra o menu quando a classe 'active' é adicionada */
-    width: 100%; /* Largura total para o menu */
+a:hover {
+    text-decoration: underline;
 }
 
 .letra_imagem {
@@ -117,158 +133,18 @@ h1 {
     transform: translateY(0); /* Retorna à posição original */
 }
 
-.segundo {
-    background-color: rgb(187, 89, 60);
-    color: aliceblue;
-    text-align: center;
-    padding: 20px;
-    margin: 0;
-}
-
-.button-container {
-    display: flex; /* Flexbox para alinhar os botões */
-    justify-content: center; /* Centraliza os botões */
-    margin-top: 10px; /* Margem superior para os botões */
-}
-
-.esquerda,
-.meio,
-.direito {
-    background-color: rgb(69, 38, 16);
-    color: #ffffff;
-    border: 2px solid #000000;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    margin: 10px;
-    width: 300px;
-    cursor: pointer;
-}
-
-.segundo button:hover {
-    background-color: #dddddd;
-}
-
-a {
-    color: rgb(225, 224, 224);
-    text-decoration: none;
-    font-size: 15px;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.sobre {
-    position: relative;
-    margin-left: 20px;
-}
-
-.contato {
-    position: relative;
-    margin-left: 20px;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Adiciona uma barra vertical entre os links */
-.sobre::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -10px;
-    height: 100%;
-    width: 2px;
-    background-color: #ffffff; /* Cor da barra */
-}
-
-.vinhos-container {
-    display: flex; /* Exibe os itens em linha */
-    flex-wrap: wrap; /* Permite que os itens sejam quebrados em múltiplas linhas, se necessário */
-    justify-content: center; /* Centraliza os itens */
-    gap: 20px; /* Espaçamento entre as caixas */
-    margin-top: 20px; /* Espaço acima da seção de vinhos */
-    max-width: 1000px; /* Define uma largura máxima para o contêiner */
-    margin-left: auto; /* Centraliza o contêiner */
-    margin-right: auto; /* Centraliza o contêiner */
-}
-
-.vinho {
-    width: calc(33.33% - 15px); /* Para 3 itens por linha */
-    max-width: 300px; /* Largura máxima opcional */
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.vinho img {
-    height: 200px;
-    clip-path: inset(10px);
-    transition: transform 0.5s ease;
-}
-
-.vinho img:hover {
-    transform: scale(1.2);
-}
-
-.vinho button {
-    cursor: pointer;
-    border: 2px solid #722f37;
-    border-radius: 10px;
-    background-color: #722f37;
-    padding: 5px;
-    margin: 10px 0 0;
-    width: 100px;
-}
-
-.vinho button:hover {
-    background-color: white;
-}
-
-/* Estilo do menu na versão mobile */
+/* Responsividade */
 @media (max-width: 768px) {
-    .nav-list {
-        display: none; /* Oculta o menu por padrão em telas menores */
+    .logo-container {
+        padding: 20px;
     }
 
-    .vinho {
-        width: calc(50% - 15px); /* Para 2 itens por linha em telas menores */
-    }
-
-    .nav-list.active {
-        display: block; /* Mostra o menu quando ativo */
-    }
-
-    .menu-toggle {
-        display: flex; /* Mostra o botão hamburguer em telas pequenas */
-    }
-
-    /* Esconde os botões em telas pequenas */
-    .button-container {
-        display: none; /* Oculta os botões em telas menores */
-    }
     .primeiro {
-     height: 200px;
-    }
-}
-
-@media (min-width: 769px) {
-    .menu-toggle {
-        display: none; /* Oculta o botão hambúrguer em telas maiores */
+        height: 200px;
     }
 
-    .nav-list {
-        display: flex; /* Mostra os links de navegação diretamente */
-        position: static; /* Muda a posição para não ser absoluto */
-        margin: 0; /* Reseta a margem */
-        padding: 0; /* Reseta o padding */
-        background-color: transparent; /* Mantém fundo transparente */
-        border-radius: 0; /* Remove as bordas arredondadas */
-    }
-
-    .nav-list li {
-        margin: 0 15px; /* Espaçamento entre os itens do menu */
+    .section {
+        padding: 20px 10px;
+        max-width: 100%; /* As caixinhas ocupam a largura total em telas menores */
     }
 }

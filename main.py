@@ -4,11 +4,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def inicial():
-    return render_template("pag.html")
+    return render_template("index.html")
 
 @app.route("/cardapio")
 def cardapio():
-    return render_template("index.html")
+    return render_template("cardapio.html")
 
 @app.route("/contato")
 def contato():

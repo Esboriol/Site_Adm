@@ -4,70 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DiVinno</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="icon" href="../static/img/Logo-1.png" type="image/x-icon">
 </head>
 <body>
     <div class="logo-container">
-        <div>
-            <img href="/" class="logo" src="{{ url_for('static', filename='img/Logo_page-0001.jpg') }}">
+        <img onclick="window.location.href='/'" class="logo" src="{{ url_for('static', filename='img/Logo_page-0001.jpg') }}">
+        <div class="nav-links">
+            <a href="{{ url_for('cardapio')}}" class="cardapio">Cardápio</a>
+            <div class="separator"></div>
+            <a href="{{ url_for('contato')}}" class="contato">Contato</a>
         </div>
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <ul class="nav-list">
-            <li><a href="{{ url_for('inicial')}}" class="sobre">Sobre a Divinno</a></li>
-            <li><a href="{{ url_for('contato')}}" class="contato">Contato</a></li>
-        </ul>
     </div>
 
     <div class="primeiro">
         <h2 class="letra_imagem">"O melhor vinho, em qualquer horário e lugar"</h2>
     </div>
 
-    <div class="segundo">
-        <h3>Selecionar categoria</h3>
-        <button class="esquerda">PlaceHolder</button>
-        <button class="meio">PlaceHolder</button>
-        <button class="direito">PlaceHolder</button>
+    <div class="section" id="mission">
+        <h3>Missão</h3>
+        <p>Nossa missão é oferecer vinhos de qualidade que proporcionem momentos inesquecíveis a nossos clientes, buscando sempre a excepcionalidade e a qualidade, tornando a vida de nossos consumidores cada vez melhor, sempre com um sorriso no rosto.</p>
     </div>
 
-    <div class="vinhos-container">
-        <div class="vinho">
-            <img src="{{ url_for('static', filename='img/bordo.png') }}">
-            <h3>Vinho antigo</h3>
-            <button>Eu quero</button>
-        </div>
-        <div class="vinho">
-            <img src="{{ url_for('static', filename='img/bordo.png') }}">
-            <h3>Vinho recente</h3>
-            <button>Eu quero</button>
-        </div>
-        <div class="vinho">
-            <img src="{{ url_for('static', filename='img/bordo.png') }}">
-            <h3>Vinho</h3>
-            <button>Eu quero</button>
-        </div>
-        <div class="vinho">
-            <img src="{{ url_for('static', filename='img/bordo.png') }}">
-            <h3>Vinho</h3>
-            <button>Eu quero</button>
-        </div>
-        <div class="vinho">
-            <img src="{{ url_for('static', filename='img/bordo.png') }}">
-            <h3>Vinho</h3>
-            <button>Eu quero</button>
-        </div>
-        <div class="vinho">
-            <img src="{{ url_for('static', filename='img/bordo.png') }}">
-            <h3>Vinho</h3>
-            <button>Eu quero</button>
-        </div>
+    <div class="section" id="vision">
+        <h3>Visão</h3>
+        <p>Ser referência no mercado de vinhos, com foco na excelência e no compromisso com a satisfação do cliente.</p>
     </div>
-        <!-- legal -->
+
+    <div class="section" id="values">
+        <h3>Valores</h3>
+        <p>A DiVinno busca sempre a melhor Qualidade, tendo sempre todo o compromisso e respeito ao cliente e à sustentabilidade.</p>
+    </div>
+
     <script>
-         // Scroll para o topo quando a página for recarregada
+        // Scroll para o topo quando a página for recarregada
         window.onbeforeunload = function () {
             window.scrollTo(0, 0);
         };
@@ -100,13 +70,6 @@
                     });
                 });
             }
-        });
-
-        const mobileMenu = document.getElementById("mobile-menu");
-        const navList = document.querySelector(".nav-list");
-
-        mobileMenu.addEventListener("click", () => {
-            navList.classList.toggle("active"); // Alterna a classe 'active' para mostrar/ocultar o menu
         });
     </script>
 </body>

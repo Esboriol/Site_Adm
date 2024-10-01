@@ -10,10 +10,6 @@ def inicial():
 def cardapio():
     return render_template("index.html")
 
-@app.route("/sobre")
-def sobre():
-    return render_template("sobre.html")
-
 @app.route("/contato")
 def contato():
     return render_template("contato.html")

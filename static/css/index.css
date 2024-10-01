@@ -97,7 +97,7 @@ h1 {
 }
 
 .nav-list li {
-    margin: 3px 0; /* Diminui a margem entre os itens */
+    margin: 3px 0;
     padding: 5px; /* Opcional: diminui o preenchimento interno dos itens */
 }
 

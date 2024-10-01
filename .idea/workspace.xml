@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" name="Changes" comment="Segunda versao">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pag.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pag.html" afterDir="false" />
-    </list>
-    <list id="d898136c-b8b6-4277-b85e-3ec5b29cd3ec" name="Changes by 2_DEV" comment="Changes by 2_DEV">
-      <change beforePath="$PROJECT_DIR$/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/index.css" afterDir="false" />
-    </list>
+    <list default="true" id="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" name="Changes" comment="Segunda versao" />
+    <list id="d898136c-b8b6-4277-b85e-3ec5b29cd3ec" name="Changes by 2_DEV" comment="Changes by 2_DEV" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,22 +25,6 @@
     <setting file="file://$PROJECT_DIR$/main.py" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/static/css/coisa.css" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/templates/pag.html" root0="SKIP_HIGHLIGHTING" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/static/css/index.css">
-      <ranges>
-        <range start1="24" end1="25" start2="24" end2="25" changelist="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" />
-        <range start1="26" end1="29" start2="26" end2="28" changelist="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" />
-        <range start1="31" end1="31" start2="30" end2="42" changelist="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" />
-        <range start1="32" end1="32" start2="43" end2="51" changelist="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" />
-        <range start1="41" end1="43" start2="60" end2="64" changelist="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" />
-        <range start1="44" end1="46" start2="65" end2="66" changelist="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" />
-        <range start1="89" end1="93" start2="109" end2="112" changelist="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" />
-        <range start1="94" end1="94" start2="113" end2="118" changelist="d898136c-b8b6-4277-b85e-3ec5b29cd3ec" />
-        <range start1="227" end1="227" start2="251" end2="254" changelist="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" />
-        <range start1="247" end1="248" start2="274" end2="274" changelist="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -111,7 +88,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727263089670</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Segunda versao">
+      <option name="closed" value="true" />
+      <created>1727785786839</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727785786839</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

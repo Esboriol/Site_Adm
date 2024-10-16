@@ -176,8 +176,9 @@ a {
 
 .sobre {
     position: relative;
-    margin-left: 1000px;
+    margin-left: 0; /* Remova o grande deslocamento para a esquerda */
     font-size: 18px;
+    text-align: center; /* Centraliza o texto */
 }
 
 .contato {
@@ -236,8 +237,15 @@ a:hover {
 
 /* Estilo do menu na versão mobile */
 @media (max-width: 768px) {
-    .nav-list {
+        .nav-list {
         display: none; /* Oculta o menu por padrão em telas menores */
+        position: absolute; /* Mantém a posição absoluta */
+        top: 60px; /* Distância do topo */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translateX(-50%); /* Garante que o menu fique centralizado */
+        width: 100%; /* Ajuste a largura do menu */
+        max-width: 750px; /* Largura máxima */
+        padding: 10px; /* Um pouco de preenchimento */
     }
 
     .vinho {
@@ -245,8 +253,12 @@ a:hover {
     }
 
     .nav-list.active {
-        display: block; /* Mostra o menu quando ativo */
-    }
+    display: block;
+    left: 0; /* Remove o deslocamento */
+    right: 0; /* Garante que o menu se estenda até o final da tela */
+    transform: none; /* Remove a transformação para centralizar o menu corretamente */
+    width: 97.2%; /* Garante que o menu cubra toda a tela */
+}
 
     .menu-toggle {
         display: flex; /* Mostra o botão hamburguer em telas pequenas */
@@ -266,14 +278,16 @@ a:hover {
         display: none; /* Oculta o botão hambúrguer em telas maiores */
     }
 
-    .nav-list {
+   .nav-list {
         display: flex; /* Mostra os links de navegação diretamente */
-        position: static; /* Muda a posição para não ser absoluto */
-        margin: 0; /* Reseta a margem */
-        padding: 0; /* Reseta o padding */
-        background-color: transparent; /* Mantém fundo transparente */
-        border-radius: 0; /* Remove as bordas arredondadas */
-    }
+        position: static; /* Remove a posição absoluta */
+        margin: 0 auto;
+        padding: 0;
+        background-color: transparent;
+        justify-content: center; /* Centraliza os itens */
+        width: auto;
+        margin-left: 520px; /* Adiciona uma margem à esquerda para movê-los à direita */
+   }
 
     .nav-list li {
         margin: 0 15px; /* Espaçamento entre os itens do menu */

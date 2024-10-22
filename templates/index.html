@@ -44,6 +44,16 @@
     </div>
 
     <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navList = document.querySelector('.nav-list');
+
+            menuToggle.addEventListener('click', function() {
+                navList.classList.toggle('active');
+            });
+        });
+
         // Scroll para o topo quando a página for recarregada
         window.onbeforeunload = function () {
             window.scrollTo(0, 0);

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" name="Changes" comment="Quarta verção" />
+    <list default="true" id="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" name="Changes" comment="Quarta verção">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/cardapio.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/cardapio.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cardapio.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cardapio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    </list>
     <list id="d898136c-b8b6-4277-b85e-3ec5b29cd3ec" name="Changes by 2_DEV" comment="Changes by 2_DEV" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729596683841</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Quarta verção">
+      <option name="closed" value="true" />
+      <created>1729597442925</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1729597442925</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

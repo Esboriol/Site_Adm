@@ -68,8 +68,8 @@ h1 {
     display: flex; /* Usa flexbox para alinhar os itens */
     align-items: center; /* Alinha verticalmente os itens no centro */
     justify-content: space-between; /* Espaça os itens */
-    margin-bottom: 01px;
-    padding: 10px;
+    margin-bottom: 1px;
+    padding: 20px;
     background-color: #722F37;
 }
 
@@ -87,6 +87,15 @@ h1 {
     width: 25px; /* Largura das barras */
     background-color: white; /* Cor das barras */
     margin: 3px 0; /* Espaçamento entre as barras */
+}
+
+.direitos {
+    display: flex; /* Usa flexbox para alinhar os itens */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    justify-content: space-between; /* Espaça os itens */
+    margin-bottom: 1px;
+    padding: 10px;
+    background-color: red;
 }
 
 .nav-list {

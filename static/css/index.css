@@ -256,6 +256,7 @@ a:hover {
 
 @media (prefers-color-scheme: dark) {
     .logo-container{
-        background-color: white;
+
+        background-color: red;
     }
 }

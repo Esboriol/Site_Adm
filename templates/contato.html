@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="../static/css/contato.css">
     <link rel="stylesheet" href="../static/css/responder.css">
     <link rel="icon" href="../static/img/Logo-1.png" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/rodape.css">
 </head>
-
 <body>
     <div class="logo-container">
         <div>
-            <a href="{{ url_for('inicial')}}">
+            <a href="{{ url_for('inicial') }}">
                 <img href="/" class="logo" src="{{ url_for('static', filename='img/Logo_page-0001.jpg') }}">
             </a>
         </div>
@@ -22,79 +22,80 @@
             <span class="bar"></span>
         </div>
         <ul class="nav-list">
-            <li><a href="{{ url_for('cardapio')}}" class="sobre">Sobre</a></li>
+            <li><a href="{{ url_for('cardapio') }}" class="sobre">Sobre</a></li>
             <div class="separator"></div>
-            <li><a href="{{ url_for('contato')}}" class="cardapio">Cardapio</a></li>
+            <li><a href="{{ url_for('contato') }}" class="cardapio">Cardapio</a></li>
         </ul>
     </div>
 
     <div class="responder">
+        <form>
+            <div class="form-container">
+                <div class="informacoes-pessoais">
+                    <fieldset class="grupo">
+                        <div class="campo">
+                            <label for="nome"><strong>Nome</strong></label>
+                            <input type="text" name="nome" id="nome" required>
+                        </div>
+                        <div class="campo">
+                            <label for="sobrenome"><strong>Sobrenome</strong></label>
+                            <input type="text" name="sobrenome" id="sobrenome" required>
+                        </div>
+                        <div class="campo">
+                            <label for="email"><strong>Email</strong></label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="campo">
+                            <label for="tel"><strong>Telefone</strong></label>
+                            <input type="tel" name="tel" id="tel">
+                        </div>
+                    </fieldset>
+                </div>
 
-    <form>
-        <fieldset class="grupo">
-
-            <!-- Campo de nome -->
-            <div class="campo">
-                <label for="nome"><strong>Nome</strong></label>
-                <input type="text" name="nome" id="nome" required>
+                <div class="motivo">
+                    <div class="campo">
+                        <label><strong>Para qual finalidade é a mensagem?</strong></label>
+                        <label>
+                            <input type="radio" name="devweb" value="atendimento">Atendimento
+                        </label>
+                        <label>
+                            <input type="radio" name="devweb" value="elogio">Elogio
+                        </label>
+                        <label>
+                            <input type="radio" name="devweb" id="qualidade">Qualidade
+                        </label>
+                        <label>
+                            <input type="radio" name="devweb" id="outro">Outro
+                        </label>
+                    </div>
+                </div>
             </div>
 
-            <!-- Campo de sobrenome-->
-             <div class="campo">
-                <label for="sobrenome"><strong>Sobrenome</strong></label>
-                <input type="text" name="sobrenome" id="sobrenome" required>
-             </div>
-        </fieldset>
-
-        <fieldset class="grupo">
-            <div class="campo">
-                <label for="email"><strong>Email</strong></label>
-                <input type="email" name="email" id="email" required>
+            <!-- Caixa de texto -->
+            <div class="campo va">
+                <br>
+                <label for="experiencia"><strong>Digite a sua mensagem:</strong></label>
+                <textarea rows="6" id="experiencia" name="experiencia"></textarea>
             </div>
 
-            <div class="campo">
-                <label for="tel"><strong>Telefone</strong></label>
-                <input type="tel" name="tel" id="tel">
-            </div>
-        </fieldset>
-
-
-        <!-- Campo com botões-->
-        <div class="campo">
-            <label><strong>Para qual finalidade é a mensagem?</strong></label>
-            <label>
-                <input type="radio" name="devweb" value="atendimento">Atendimento
-            </label>
-            <label>
-                <input type="radio" name="devweb" value="elogio">Elogio
-            </label>
-            <label>
-                <input type="radio" name="devweb" id="qualidade">Qualidade
-            </label>
-            <label>
-                <input type="radio" name="devweb" id="outro">Outro
-            </label>
-        </div>
-
-         <!-- Caixa de texto -->
-         <div class="campo">
             <br>
-            <label for="experiencia"><strong>Digite a sua mensagem: </strong></label>
-            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
-         </div>
 
-         <!-- Botões para enviar o formulario -->
-         <button class="botao" type="submit" onsubmit="">Concluido</button>
-
-    </form>
-
+            <!-- Botões para enviar o formulario -->
+            <button class="botao" type="submit">Concluido</button>
+        </form>
     </div>
 
-    <br>
-    <br>
-
     <div class="logo-container">
-        <p>daijsfnaudfhsa</p>
+        <div>
+            <img href="/" class="logo" src="{{ url_for('static', filename='img/Logo_page-0001.jpg') }}">
+        </div>
+        <div>
+            <hr class="linha">
+            <div class="paragrafos">
+                <p>© 2024 Divinno, Todos os direitos reservados</p>
+                <p>Desenvolvido por: Otávio Esboriol da Silva e Guilherme Colleti da Silva</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>

@@ -30,7 +30,6 @@ fieldset{
     color: rgb(255, 1, 225);
     margin-left: 36%;
     margin-top: 2%;
-    justify-content: center;
 }
 
 input, select, textarea, button {
@@ -70,6 +69,19 @@ fieldset.grupo .campo {
     display: block;
 }
 
+.va {
+    font-family: Arial, Helvetica;
+    font-size: 1em;
+    color: rgb(255, 1, 225);
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+textarea {
+    width: 50%;
+}
+
 .campo select option {
     padding-right: 1em;
 }
@@ -78,21 +90,36 @@ fieldset.grupo .campo {
     background: #e0e0ff;
 }
 
+.form-container {
+    display: flex; /* Usando flexbox para o layout */
+    justify-content: space-between; /* Espaçamento entre as colunas */
+    margin: 2em -1%; /* Margem para separar do restante do conteúdo */
+}
+
+.informacoes-pessoais, .motivo {
+    width: 50%; /* Mantendo a largura original */
+    margin-left: 0; /* Removendo a margem esquerda */
+}
+
+.informacoes-pessoais .campo {
+    margin-bottom: 2px; /* Espaçamento entre os campos */
+}
+
+.motivo .campo {
+    margin-bottom: 1em; /* Espaçamento entre os campos */
+}
+
 .botao {
     font-size: 1.2em;
     background: rgb(247, 228, 228);
     border: 0;
-    margin-bottom: 1em;
     color: rgb(0, 140, 255);
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgb(12, 106, 184);
     text-shadow: 1px 1px 1px rgb(12, 102, 174);
-    position: absolute;
-    top: 90%;
-    left: 102%;
-    margin-left: -50%;
     transform: translate(-50%, -50%);
     transform-origin: center;
+    margin-left: 51%;
 
 }
 
@@ -100,4 +127,20 @@ fieldset.grupo .campo {
     background: #CCBBFF;
     box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .botao {
+        margin-left: 45%;
+    }
+
+    .responder {
+       margin-left: 5%;
+    }
+
+    textarea {
+        width: 90%;  /* Aumenta a largura para quase ocupar toda a tela em dispositivos móveis */
+        height: 50%;
+    }
+
 }

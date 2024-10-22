@@ -253,3 +253,9 @@ a:hover {
         margin: 0 15px; /* Espaçamento entre os itens do menu */
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .logo-container{
+        background-color: white
+    }
+}

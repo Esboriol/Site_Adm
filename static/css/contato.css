@@ -1,0 +1,199 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+h2, h3 {
+    margin: 0;
+}
+
+.sobre {
+    position: relative;
+    margin-left: 0; /* Remova o grande deslocamento para a esquerda */
+    font-size: 18px;
+    text-align: center; /* Centraliza o texto */
+}
+
+.cardapio {
+    position: relative;
+    margin-right: 0px;
+    font-size: 18px;
+}
+
+h3 {
+    color: #722F37;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    margin: 0; /* Remove a margem padrão do parágrafo */
+    color: #333;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    width: 90px;
+    cursor: pointer;
+}
+
+.logo-container {
+    display: flex; /* Usa flexbox para alinhar os itens */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    justify-content: space-between; /* Espaça os itens */
+    margin-bottom: 01px;
+    padding: 10px;
+    background-color: #722F37;
+}
+
+.menu-toggle {
+    display: none; /* Oculta o botão por padrão */
+    flex-direction: column; /* Alinha as barras em coluna */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    position: absolute; /* Posiciona em relação ao contêiner pai */
+    top: 20px; /* Distância do topo */
+    right: 20px; /* Distância da direita */
+}
+
+.menu-toggle .bar {
+    height: 3px; /* Altura das barras */
+    width: 25px; /* Largura das barras */
+    background-color: white; /* Cor das barras */
+    margin: 3px 0; /* Espaçamento entre as barras */
+}
+
+.nav-list {
+    display: none; /* Oculta o menu por padrão */
+    position: absolute;
+    top: 60px; /* Distância do topo */
+    left: 50%; /* Posiciona o menu no meio da tela */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    background-color: #722f37;
+    padding: 5px; /* Diminui o preenchimento interno do menu */
+    border-radius: 5px;
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    z-index: 1000; /* Certifique-se de que o menu esteja acima de outros elementos */
+    width: auto; /* Ajusta a largura do menu */
+}
+
+.nav-list li {
+    list-style: none;
+    margin: 5px 0;
+    padding: 5px; /* Opcional: diminui o preenchimento interno dos itens */
+}
+
+.nav-list.active {
+    display: block; /* Mostra o menu quando a classe 'active' é adicionada */
+    width: 100%; /* Largura total para o menu */
+}
+
+/* Estilização das seções */
+.section {
+    padding: 30px 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    background-color: #F8F8F8; /* Fundo leve para as caixinhas */
+    border: 1px solid #ddd; /* Borda sutil */
+    border-radius: 8px; /* Canto arredondado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    max-width: 600px; /* Largura máxima das caixinhas */
+    margin: 20px auto; /* Centraliza horizontalmente e adiciona espaço entre elas */
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.logo-container {
+    display: flex; /* Usa flexbox para alinhar os itens */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    justify-content: space-between; /* Espaça os itens */
+    margin-bottom: 1px;
+    padding: 20px;
+    background-color: #722F37;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin-right: 50px; /* Ajuste para mover os links horizontalmente à direita */
+}
+
+.cardapio, .sobre {
+    color: rgb(225, 224, 224);
+    text-decoration: none;
+    margin: 0 15px; /* Margem entre os links */
+    font-family: "Nunito Sans", sans-serif, helvetica, arial;
+}
+
+.logo-wrapper {
+    flex: 0 0 auto; /* Garante que a logo não cresça ou encolha */
+}
+
+.separator {
+    width: 2px; /* Largura da barra */
+    height: 20px; /* Altura da barra */
+    background-color: white; /* Cor da barra */
+    margin: 0 15px; /* Margem entre os links */
+    display: inline-block; /* Faz a barra se comportar como um bloco inline */
+}
+
+@media (max-width: 768px) {
+        .nav-list {
+        display: none; /* Oculta o menu por padrão em telas menores */
+        position: absolute; /* Mantém a posição absoluta */
+        top: 60px; /* Distância do topo */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translateX(-50%); /* Garante que o menu fique centralizado */
+        width: 100%; /* Ajuste a largura do menu */
+        max-width: 750px; /* Largura máxima */
+        padding: 10px; /* Um pouco de preenchimento */
+    }
+
+    .nav-list.active {
+    display: block;
+    left: 0; /* Remove o deslocamento */
+    right: 0; /* Garante que o menu se estenda até o final da tela */
+    transform: none; /* Remove a transformação para centralizar o menu corretamente */
+    width: 93.8%; /* Garante que o menu cubra toda a tela */
+}
+
+    .menu-toggle {
+        display: flex; /* Mostra o botão hamburguer em telas pequenas */
+    }
+
+    /* Esconde os botões em telas pequenas */
+    .button-container {
+        display: none; /* Oculta os botões em telas menores */
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none; /* Oculta o botão hambúrguer em telas maiores */
+    }
+
+   .nav-list {
+        display: flex; /* Mostra os links de navegação diretamente */
+        position: static; /* Remove a posição absoluta */
+        margin: 0 auto;
+        padding: 0;
+        background-color: transparent;
+        justify-content: center; /* Centraliza os itens */
+        width: auto;
+        margin-left: 520px; /* Adiciona uma margem à esquerda para movê-los à direita */
+   }
+
+    .nav-list li {
+        margin: 0 15px; /* Espaçamento entre os itens do menu */
+    }
+}

@@ -6,6 +6,7 @@
     <title>DiVinno</title>
     <link rel="stylesheet" href="../static/css/index.css">
     <link rel="stylesheet" href="../static/css/rodape.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botao.css') }}">
     <link rel="icon" href="../static/img/Logo-1.png" type="image/x-icon">
 </head>
 <body>
@@ -46,11 +47,13 @@
         <p>A DiVinno busca sempre a melhor Qualidade, tendo sempre todo o compromisso e respeito ao cliente e à sustentabilidade.</p>
     </div>
 
-    <div class="logo-container">
+    <div class="logo-content-rodape">
         <div>
-            <img href="/" class="logo" src="{{ url_for('static', filename='img/Logo_page-0001.jpg') }}">
+            <a href="{{ url_for('inicial')}}">
+                <img href="/" class="logo-rodape" src="{{ url_for('static', filename='img/Logo_page-0001.jpg') }}">
+            </a>
         </div>
-        <div>
+        <div class="visivel">
             <hr class="linha">
             <div class="paragrafos">
                 <p>© 2024 Divinno, Todos os direitos reservados </p>

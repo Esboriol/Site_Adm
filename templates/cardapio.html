@@ -6,6 +6,7 @@
     <title>DiVinno</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/cardapio.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/rodape.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botao.css') }}">
 </head>
 <body>
     <div class="logo-container">
@@ -70,11 +71,13 @@
         </div>
     </div>
 
-    <div class="logo-container">
+    <div class="logo-content-rodape">
         <div>
-            <img href="/" class="logo" src="{{ url_for('static', filename='img/Logo_page-0001.jpg') }}">
+            <a href="{{ url_for('inicial')}}">
+                <img href="/" class="logo-rodape" src="{{ url_for('static', filename='img/Logo_page-0001.jpg') }}">
+            </a>
         </div>
-        <div>
+        <div class="visivel">
             <hr class="linha">
             <div class="paragrafos">
                 <p>© 2024 Divinno, Todos os direitos reservados </p>

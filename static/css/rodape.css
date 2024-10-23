@@ -5,6 +5,22 @@ hr {
     margin: 20px 0; /* Margens superior e inferior */
 }
 
+.logo-content-rodape {
+    display: flex; /* Usa flexbox para alinhar os itens */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    justify-content: space-between; /* Espaça os itens */
+    margin-bottom: 01px;
+    padding: 10px;
+    background-color: #722F37;
+}
+
+.logo-rodape {
+    max-width: 100px;
+    height: auto;
+    width: 90px;
+    cursor: pointer;
+}
+
 .linha {
     height: 2px; /* Altura da linha */
     background-color: white; /* Cor da linha */
@@ -24,4 +40,20 @@ hr {
 
 .paragrafos p:last-child {
     margin-right: 0;
+}
+
+.visivel {
+    display: block;
+}
+
+@media (max-width: 768px) {
+
+    .visivel {
+        display: none;
+    }
+
+    .logo-rodape {
+        max-width: 200px;
+        width: 135px;
+    }
 }

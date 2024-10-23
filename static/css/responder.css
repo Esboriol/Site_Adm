@@ -1,146 +1,83 @@
-
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
 }
 
-#titulo{
-    font-family: sans-serif;
-    color: red;
-    margin-left: 7%;
-}
-
-#subtitulo {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: red;
-    margin-left: 5%;
-}
-
-#check {
-    display: inline-block;
-}
-
-fieldset{
-    border: 0;
-}
-
-.responder{
-    font-family: Arial, Helvetica;
-    font-size: 1em;
-    color: rgb(255, 1, 225);
-    margin-left: 36%;
-    margin-top: 2%;
-}
-
-input, select, textarea, button {
-    font-family: Arial, Helvetica;
-    font-size: 1em;
-    color: rgb(0, 255, 255);
-    border-radius: 5px;
-}
-
-.grupo::before, .grupo:after {
-    display: table;
-}
-
-.grupo:after {
-    clear: both;
-}
-
-.campo {
-    margin-bottom: 1em;
-}
-
-.campo label {
-    margin-bottom: 0.2em;
-    color: rgb(123, 0, 255);
-    display: block;
-}
-
-fieldset.grupo .campo {
-    float: left;
-    margin-right: 1em;
-}
-
-.campo input[type="text"], .campo input[type="email"], .campo input[type="tel"] ,.campo select, .campo textarea {
-    padding: 0.2em;
-    border: 1px solid rgb(0, 72, 255);
-    box-shadow: 2px 2px 2px rebeccapurple;
-    display: block;
-}
-
-.va {
-    font-family: Arial, Helvetica;
-    font-size: 1em;
-    color: rgb(255, 1, 225);
-    margin-left: 36%;
-    margin-top: 2%;
+.container {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 40px 0; /* Remover o height para evitar limitar o espaço de altura */
 }
 
-textarea {
-    width: 50%;
+.form-sections {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.campo select option {
-    padding-right: 1em;
+.left-section, .right-section {
+    width: 45%;
 }
 
-.campo input:focus, .campo select:focus, .campo textarea:focus {
-    background: #e0e0ff;
+.left-section input[type="text"],
+.left-section input[type="email"],
+.left-section input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 30px; /* Aumentei o espaçamento */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-.form-container {
-    display: flex; /* Usando flexbox para o layout */
-    justify-content: space-between; /* Espaçamento entre as colunas */
-    margin: 2em -1%; /* Margem para separar do restante do conteúdo */
+.left-section label, .right-section label {
+    font-size: 14px;
+    color: #5a1d1d;
 }
 
-.informacoes-pessoais, .motivo {
-    width: 50%; /* Mantendo a largura original */
-    margin-left: 0; /* Removendo a margem esquerda */
+.right-section {
+    font-size: 20px;
+    color: #5a1d1d;
 }
 
-.informacoes-pessoais .campo {
-    margin-bottom: 2px; /* Espaçamento entre os campos */
+.right-section div {
+    margin-top: 15px; /* Aumentei o espaçamento */
 }
 
-.motivo .campo {
-    margin-bottom: 1em; /* Espaçamento entre os campos */
+.message-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px; /* Aumentei o espaçamento */
 }
 
-.botao {
-    font-size: 1.2em;
-    background: rgb(247, 228, 228);
-    border: 0;
-    color: rgb(0, 140, 255);
-    padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgb(12, 106, 184);
-    text-shadow: 1px 1px 1px rgb(12, 102, 174);
-    transform: translate(-50%, -50%);
-    transform-origin: center;
-    margin-left: 51%;
+.message-section textarea {
+    width: 40%;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: 52%;
+    margin-top: -13%; /* Espaçamento entre o texto e a caixa de mensagem */
 
 }
 
-.botao:hover {
-    background: #CCBBFF;
-    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
-    text-shadow: none;
+.center-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-@media (max-width: 768px) {
-    .botao {
-        margin-left: 45%;
-    }
+button {
+    padding: 10px 20px;
+    background-color: #5a1d1d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-    .responder {
-       margin-left: 5%;
-    }
-
-    textarea {
-        width: 90%;  /* Aumenta a largura para quase ocupar toda a tela em dispositivos móveis */
-        height: 50%;
-    }
-
+button:hover {
+    background-color: #7a3333;
 }

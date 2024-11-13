@@ -81,3 +81,25 @@ button {
 button:hover {
     background-color: #7a3333;
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        margin: 0; /* Remove margens extras em telas pequenas */
+    }
+
+    .right-section {
+        margin-top: 20px;
+    }
+
+    .message-section textarea {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}

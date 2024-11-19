@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ vinho.nome }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/produto.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cabecalho.css') }}">
+</head>
+<body>
+    <div class="logo-container">
+        <div>
+            <a href="{{ url_for('inicial')}}">
+                <img href="/" class="logo" src="{{ url_for('static', filename='img/logo.png') }}">
+            </a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="{{ url_for('cardapio')}}" class="cardapio">Cardapio</a></li>
+            <div class="separator"></div>
+            <li><a href="{{ url_for('contato')}}" class="contato">Contato</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>{{ vinho.nome }}</h1>
+        <div class="vinho-detalhes">
+            <!-- Imagem do vinho -->
+            <div class="imagem-vinho">
+                <img src="{{ url_for('static', filename=vinho['imagem'].split('static/')[1]) }}" alt="{{ vinho['nome'] }}">
+            </div>
+
+            <!-- Informações do vinho -->
+            <div class="informacoes-vinho">
+                <p><strong>Tipo:</strong> {{ vinho.tipo }}</p>
+                <p><strong>Região:</strong> {{ vinho.regiao }}</p>
+                <p><strong>Safra:</strong> {{ vinho.safra }}</p>
+                <p><strong>Preço:</strong> R$ {{ vinho.preco }}</p>
+            </div>
+        </div>
+        <a href="/cardapio">Voltar ao Cardápio</a>
+    </div>
+</body>
+</html>

@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/cardapio.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/rodape.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/botao.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cabecalho.css') }}">
 </head>
 <body>
     <div class="logo-container">
         <div>
             <a href="{{ url_for('inicial')}}">
-                <img href="/" class="logo" src="{{ url_for('static', filename='img/Logo_page-0001.jpg') }}">
+                <img href="/" class="logo" src="{{ url_for('static', filename='img/logo.png') }}">
             </a>
         </div>
         <div class="menu-toggle" id="mobile-menu">
@@ -39,42 +40,22 @@
     </div>
 
     <div class="vinhos-container">
+    {% for vinho in vinhos %}
         <div class="vinho">
-            <img src="{{ url_for('static', filename='img/bordo.png') }}">
-            <h3>Vinho antigo</h3>
-            <button>Eu quero</button>
+            <img src="{{ url_for('static', filename=vinho['imagem'].split('static/')[1]) }}" alt="{{ vinho['nome'] }}">
+            <h3>{{ vinho['nome'] }}</h3>
+            <a href="{{ url_for('vinho_detalhado', vinho_id=loop.index0) }}">
+                <button>Eu quero</button>
+            </a>
         </div>
-        <div class="vinho">
-            <img src="{{ url_for('static', filename='img/bordo.png') }}">
-            <h3>Vinho recente</h3>
-            <button>Eu quero</button>
-        </div>
-        <div class="vinho">
-            <img src="{{ url_for('static', filename='img/bordo.png') }}">
-            <h3>Vinho</h3>
-            <button>Eu quero</button>
-        </div>
-        <div class="vinho">
-            <img src="{{ url_for('static', filename='img/bordo.png') }}">
-            <h3>Vinho</h3>
-            <button>Eu quero</button>
-        </div>
-        <div class="vinho">
-            <img src="{{ url_for('static', filename='img/bordo.png') }}">
-            <h3>Vinho</h3>
-            <button>Eu quero</button>
-        </div>
-        <div class="vinho">
-            <img src="{{ url_for('static', filename='img/bordo.png') }}">
-            <h3>Vinho</h3>
-            <button>Eu quero</button>
-        </div>
-    </div>
+    {% endfor %}
+</div>
+
 
     <div class="logo-content-rodape">
         <div>
             <a href="{{ url_for('inicial')}}">
-                <img href="/" class="logo-rodape" src="{{ url_for('static', filename='img/Logo_page-0001.jpg') }}">
+                <img href="/" class="logo-rodape" src="{{ url_for('static', filename='img/logo.png') }}">
             </a>
         </div>
         <div class="visivel">

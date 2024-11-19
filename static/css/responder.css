@@ -44,13 +44,13 @@ body {
 }
 
 .right-section div {
-    margin-top: 15px; /* Aumentei o espaçamento */
+    margin-top: 15px;
 }
 
 .message-section {
     display: flex;
     flex-direction: column;
-    margin-top: 40px; /* Aumentei o espaçamento */
+    margin-top: 40px;
 }
 
 .message-section textarea {
@@ -59,7 +59,7 @@ body {
     border-radius: 5px;
     border: 1px solid #ccc;
     margin-left: 52%;
-    margin-top: -13%; /* Espaçamento entre o texto e a caixa de mensagem */
+    margin-top: -13%;
 
 }
 
@@ -88,18 +88,37 @@ button:hover {
         padding: 20px;
     }
 
-    .left-section, .right-section {
-        width: 100%;
-        margin: 0; /* Remove margens extras em telas pequenas */
+    .form-sections {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 
+    .left-section, .right-section {
+        width: 100%;
+        margin: 0;
+    }
+
+    .left-section input[type="text"],
+    .left-section input[type="email"],
+    .left-section input[type="tel"] {
+        margin: 10px 0;
+        width: 90%;
+    }
     .right-section {
-        margin-top: 20px;
+        margin-top: 0;
     }
 
     .message-section textarea {
-        width: 100%;
+        width: 90%;
         margin-left: 0;
-        margin-top: 20px;
+        margin-top: 5%;
+    }
+
+    .message-section {
+
+        left: 0;
+        width: 90%;
     }
 }

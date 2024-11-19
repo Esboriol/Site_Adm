@@ -1,8 +1,3 @@
-/* Adicionando a remoção do outline nos botões e links */
-.logo-container button,
-.logo-container a {
-    outline: none; /* Remove a bolinha preta ao focar */
-}
 
 /* Resto do código permanece o mesmo */
 body {
@@ -55,22 +50,6 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-.logo {
-    max-width: 100px;
-    height: auto;
-    width: 90px;
-    cursor: pointer;
-}
-
-.logo-container {
-    display: flex; /* Usa flexbox para alinhar os itens */
-    align-items: center; /* Alinha verticalmente os itens no centro */
-    justify-content: space-between; /* Espaça os itens */
-    margin-bottom: 1px;
-    padding: 20px;
-    background-color: #722F37;
 }
 
 .direitos {
@@ -127,14 +106,7 @@ h1 {
     background-color: #dddddd;
 }
 
-a {
-    color: rgb(225, 224, 224);
-    text-decoration: none;
-    font-size: 15px;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
+
 
 .sobre {
     position: relative;
@@ -147,10 +119,6 @@ a {
     position: relative;
     margin-right: 0px;
     font-size: 18px;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 .vinhos-container {
@@ -203,6 +171,11 @@ a:hover {
 
     .vinho {
         width: calc(50% - 15px); /* Para 2 itens por linha em telas menores */
+    }
+
+    .vinho img {
+        max-width: 100%;
+        height: auto;
     }
 
     .segundo button {

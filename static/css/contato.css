@@ -10,19 +10,6 @@ h2, h3 {
     margin: 0;
 }
 
-.sobre {
-    position: relative;
-    margin-left: 0; /* Remova o grande deslocamento para a esquerda */
-    font-size: 18px;
-    text-align: center; /* Centraliza o texto */
-}
-
-.cardapio {
-    position: relative;
-    margin-right: 0px;
-    font-size: 18px;
-}
-
 h3 {
     color: #722F37;
     text-align: center;
@@ -33,22 +20,6 @@ p {
     text-align: center;
     margin: 0; /* Remove a margem padrão do parágrafo */
     color: #333;
-}
-
-.logo {
-    max-width: 100px;
-    height: auto;
-    width: 90px;
-    cursor: pointer;
-}
-
-.logo-container {
-    display: flex; /* Usa flexbox para alinhar os itens */
-    align-items: center; /* Alinha verticalmente os itens no centro */
-    justify-content: space-between; /* Espaça os itens */
-    margin-bottom: 01px;
-    padding: 10px;
-    background-color: #722F37;
 }
 
 /* Estilização das seções */
@@ -79,21 +50,7 @@ p {
     background-color: #722F37;
 }
 
-.cardapio, .sobre {
-    color: rgb(225, 224, 224);
-    text-decoration: none;
-    margin: 0 15px; /* Margem entre os links */
-    font-family: "Nunito Sans", sans-serif, helvetica, arial;
-}
-
 .logo-wrapper {
     flex: 0 0 auto; /* Garante que a logo não cresça ou encolha */
 }
 
-.separator {
-    width: 2px; /* Largura da barra */
-    height: 20px; /* Altura da barra */
-    background-color: white; /* Cor da barra */
-    margin: 0 15px; /* Margem entre os links */
-    display: inline-block; /* Faz a barra se comportar como um bloco inline */
-}

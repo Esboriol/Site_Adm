@@ -1,0 +1,39 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.vinho-detalhes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagem-vinho img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.informacoes-vinho {
+    max-width: 50%;
+}
+
+.informacoes-vinho p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Estilos para o link */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007BFF; /* cor do link */
+}
+
+a:hover {
+    text-decoration: none; /* Remove o sublinhado no hover */
+    color: #0056b3; /* cor mais escura ao passar o mouse, se quiser destacar */
+}

@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" name="Changes" comment="html">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" name="Changes" comment=".">
+      <change beforePath="$PROJECT_DIR$/static/css/produto.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/produto.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -341,7 +341,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732621522511</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary=".">
+      <option name="closed" value="true" />
+      <created>1732621945688</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1732621945688</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -352,12 +360,12 @@
     <MESSAGE value="Quinta verção" />
     <MESSAGE value="HTML" />
     <MESSAGE value="CSS" />
-    <MESSAGE value="." />
     <MESSAGE value="python" />
     <MESSAGE value="img" />
     <MESSAGE value="imagem" />
     <MESSAGE value="css" />
     <MESSAGE value="html" />
-    <option name="LAST_COMMIT_MESSAGE" value="html" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>

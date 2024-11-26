@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/produto.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/cabecalho.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/botao.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/rodape.css') }}">
 </head>
 <body>
     <div class="logo-container">
@@ -43,7 +44,24 @@
                 <p><strong>Preço:</strong> R$ {{ vinho.preco }}</p>
             </div>
         </div>
-        <a href="/cardapio">Voltar ao Cardápio</a>
+        <button>
+            <a href="/cardapio">Voltar ao Cardápio</a>
+        </button>
+    </div>
+
+    <div class="logo-content-rodape">
+        <div>
+            <a href="{{ url_for('inicial')}}">
+                <img href="/" class="logo-rodape" src="{{ url_for('static', filename='img/logo.png') }}">
+            </a>
+        </div>
+        <div class="visivel">
+            <hr class="linha">
+            <div class="paragrafos">
+                <p>© 2024 Divinno, Todos os direitos reservados </p>
+                <p>Desenvolvido por:Otávio Esboriol da Silva e Guilherme Colleti da Silva</p>
+            </div>
+        </div>
     </div>
 
     <script>

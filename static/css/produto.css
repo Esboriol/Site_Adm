@@ -1,39 +1,99 @@
 .container {
-    width: 80%;
+    width: 90%; /* Aumentado para melhorar o espaçamento em telas menores */
+    max-width: 1200px; /* Define um limite para evitar que fique muito largo em telas grandes */
     margin: 0 auto;
     padding: 20px;
+    font-family: 'Arial', sans-serif; /* Define uma fonte padrão */
+    color: #333; /* Cor base para o texto */
 }
 
+/* Seção de detalhes do vinho */
 .vinho-detalhes {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start; /* Alinha ao topo para melhor visualização */
+    gap: 20px; /* Espaçamento entre a imagem e as informações */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
 }
 
+/* Imagem do vinho */
 .imagem-vinho img {
-    max-width: 300px;
+    max-width: 100%; /* Garante que a imagem não ultrapasse os limites do container */
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px; /* Suaviza as bordas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra para destaque */
 }
 
+/* Informações do vinho */
 .informacoes-vinho {
-    max-width: 50%;
+    flex: 1; /* Faz o texto ocupar espaço proporcional */
+    max-width: 600px; /* Limita a largura para garantir boa leitura */
 }
 
 .informacoes-vinho p {
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.8; /* Melhor espaçamento entre linhas para facilitar a leitura */
+    margin-bottom: 10px;
 }
 
-/* Estilos para o link */
+/* Link estilizado
 a {
     display: inline-block;
     margin-top: 20px;
+    padding: 10px 20px;
     text-decoration: none;
-    color: #007BFF; /* cor do link */
+    color: #007BFF;
+    background-color: #f8f9fa;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
+*/
 
 a:hover {
-    text-decoration: none; /* Remove o sublinhado no hover */
-    color: #0056b3; /* cor mais escura ao passar o mouse, se quiser destacar */
+    background-color: #007BFF; /* Fundo azul no hover */
+    color: #fff; /* Texto branco para contraste */
+    border-color: #0056b3; /* Altera a cor da borda */
+}
+
+/* Adiciona um efeito de foco visível para acessibilidade */
+a:focus {
+    outline: 3px dashed #007BFF;
+    outline-offset: 3px;
+}
+
+/* Ajustes para dispositivos menores */
+@media (max-width: 768px) {
+    .vinho-detalhes {
+        flex-direction: column; /* Empilha a imagem e o texto */
+        align-items: center; /* Centraliza os itens */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .imagem-vinho img {
+        max-width: 80%; /* Reduz o tamanho da imagem em telas menores */
+        margin-bottom: 20px; /* Adiciona espaçamento abaixo da imagem */
+    }
+
+    .informacoes-vinho {
+        max-width: 100%; /* Garante que o texto ocupe toda a largura disponível */
+    }
+
+    a {
+        width: 100%; /* Faz o botão ocupar toda a largura */
+        text-align: center;
+    }
+}
+
+/* Ajustes para telas muito grandes */
+@media (min-width: 1200px) {
+    .container {
+        padding: 40px; /* Aumenta o espaçamento em telas grandes */
+    }
+
+    .informacoes-vinho p {
+        font-size: 20px; /* Aumenta a legibilidade */
+    }
 }

@@ -47,7 +47,7 @@
 
 @media (max-width: 768px) {
     .nav-list {
-        display: none; /* Oculta o menu por padrão em telas menores */
+        display: none;
         position: absolute; /* Mantém a posição absoluta */
         top: 60px; /* Distância do topo */
         left: 50%; /* Centraliza horizontalmente */

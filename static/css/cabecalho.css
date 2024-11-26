@@ -34,13 +34,6 @@
     display: inline-block; /* Faz a barra se comportar como um bloco inline */
 }
 
-.nav-list {
-    display: flex; /* Alinha os itens da lista horizontalmente */
-    justify-content: center; /* Opcional: Alinha os itens ao centro */
-    padding: 0; /* Remove o padding padrão da lista */
-    margin: 0; /* Remove a margem padrão da lista */
-}
-
 .nav-list li {
     list-style-type: none; /* Remove os marcadores padrão */
     margin: 0 20px; /* Espaçamento entre os itens da lista */

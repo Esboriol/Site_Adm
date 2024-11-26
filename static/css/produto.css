@@ -52,11 +52,6 @@ a {
 }
 */
 
-a:hover {
-    background-color: #007BFF; /* Fundo azul no hover */
-    color: #fff; /* Texto branco para contraste */
-    border-color: #0056b3; /* Altera a cor da borda */
-}
 
 /* Adiciona um efeito de foco visível para acessibilidade */
 a:focus {

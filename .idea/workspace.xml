@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" name="Changes" comment="CSS">
+    <list default="true" id="2c000d81-3ef4-4f15-bfe1-5a25f2bbab40" name="Changes" comment="html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/botao.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/botao.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/cardapio.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/cardapio.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/contato.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/contato.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/responder.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/responder.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -41,6 +38,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;
@@ -239,7 +237,111 @@
       <option name="project" value="LOCAL" />
       <updated>1729693175643</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="CSS">
+      <option name="closed" value="true" />
+      <created>1731514823223</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1731514823223</updated>
+    </task>
+    <task id="LOCAL-00023" summary=".">
+      <option name="closed" value="true" />
+      <created>1731514866035</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1731514866035</updated>
+    </task>
+    <task id="LOCAL-00024" summary="css">
+      <option name="closed" value="true" />
+      <created>1732016337603</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1732016337603</updated>
+    </task>
+    <task id="LOCAL-00025" summary="python">
+      <option name="closed" value="true" />
+      <created>1732046604910</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1732046604910</updated>
+    </task>
+    <task id="LOCAL-00026" summary="img">
+      <option name="closed" value="true" />
+      <created>1732046626517</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1732046626518</updated>
+    </task>
+    <task id="LOCAL-00027" summary="css">
+      <option name="closed" value="true" />
+      <created>1732046643160</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1732046643160</updated>
+    </task>
+    <task id="LOCAL-00028" summary="html">
+      <option name="closed" value="true" />
+      <created>1732046657732</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1732046657732</updated>
+    </task>
+    <task id="LOCAL-00029" summary="css">
+      <option name="closed" value="true" />
+      <created>1732046673343</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1732046673343</updated>
+    </task>
+    <task id="LOCAL-00030" summary="html">
+      <option name="closed" value="true" />
+      <created>1732046687706</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1732046687706</updated>
+    </task>
+    <task id="LOCAL-00031" summary="imagem">
+      <option name="closed" value="true" />
+      <created>1732046706877</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1732046706877</updated>
+    </task>
+    <task id="LOCAL-00032" summary="css">
+      <option name="closed" value="true" />
+      <created>1732619616926</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1732619616926</updated>
+    </task>
+    <task id="LOCAL-00033" summary="html">
+      <option name="closed" value="true" />
+      <created>1732620174106</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1732620174106</updated>
+    </task>
+    <task id="LOCAL-00034" summary="html">
+      <option name="closed" value="true" />
+      <created>1732621522511</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1732621522511</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -250,6 +352,12 @@
     <MESSAGE value="Quinta verção" />
     <MESSAGE value="HTML" />
     <MESSAGE value="CSS" />
-    <option name="LAST_COMMIT_MESSAGE" value="CSS" />
+    <MESSAGE value="." />
+    <MESSAGE value="python" />
+    <MESSAGE value="img" />
+    <MESSAGE value="imagem" />
+    <MESSAGE value="css" />
+    <MESSAGE value="html" />
+    <option name="LAST_COMMIT_MESSAGE" value="html" />
   </component>
 </project>

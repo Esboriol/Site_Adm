@@ -1,129 +1,104 @@
 .container {
-    width: 90%; /* Aumentado para melhorar o espaçamento em telas menores */
-    max-width: 1200px; /* Define um limite para evitar que fique muito largo em telas grandes */
+    width: 90%; /* Mantém boa largura em telas menores */
+    max-width: 1200px; /* Limite para telas grandes */
     margin: 0 auto;
     padding: 20px;
-    font-family: 'Arial', sans-serif; /* Define uma fonte padrão */
-    color: #333; /* Cor base para o texto */
+    font-family: 'Arial', sans-serif; /* Fonte padrão */
+    color: #333; /* Cor principal do texto */
 }
 
 /* Seção de detalhes do vinho */
 .vinho-detalhes {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Alinha ao topo para melhor visualização */
-    gap: 20px; /* Espaçamento entre a imagem e as informações */
-    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+    justify-content: space-between; /* Espaça imagem e informações */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    gap: 20px; /* Espaçamento entre imagem e texto */
+    flex-wrap: wrap; /* Permite quebra em telas menores */
 }
 
 /* Imagem do vinho */
 .imagem-vinho img {
-    max-width: 100%; /* Garante que a imagem não ultrapasse os limites do container */
-    height: auto;
-    border-radius: 10px; /* Suaviza as bordas */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra para destaque */
+    max-width: 100%; /* Evita que ultrapasse os limites do contêiner */
+    height: auto; /* Mantém proporção */
+    border-radius: 10px; /* Bordas suavizadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
 }
 
 /* Informações do vinho */
 .informacoes-vinho {
-    flex: 1; /* Faz o texto ocupar espaço proporcional */
-    max-width: 600px; /* Limita a largura para garantir boa leitura */
+    flex: 1; /* Ocupa o espaço restante */
+    max-width: 600px; /* Limita a largura para melhorar leitura */
 }
 
 .informacoes-vinho p {
     font-size: 18px;
-    line-height: 1.8; /* Melhor espaçamento entre linhas para facilitar a leitura */
-    margin-bottom: 10px;
+    line-height: 1.8; /* Espaçamento entre linhas */
+    margin-bottom: 10px; /* Espaço entre parágrafos */
 }
 
-/* Link estilizado
-a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #007BFF;
-    background-color: #f8f9fa;
-    border: 2px solid #007BFF;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-*/
-
+/* Estilização do botão "Voltar ao Cardápio" */
 .botao-voltar {
     display: inline-block;
-    background-color: #FF8C00; /* Cor de fundo laranja */
+    background-color: #FF8C00; /* Fundo laranja */
     color: #fff; /* Texto branco */
-    padding: 10px 20px; /* Espaçamento interno */
-    font-size: 16px; /* Tamanho do texto */
-    font-weight: bold; /* Texto em negrito */
-    border: none; /* Remove a borda padrão */
-    border-radius: 5px; /* Arredonda os cantos */
-    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra */
+    padding: 12px 24px; /* Espaçamento interno maior */
+    font-size: 16px;
+    font-weight: bold;
+    border: none; /* Remove bordas padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
     text-align: center;
+    width: fit-content; /* Adapta largura ao conteúdo */
+    margin: 10px 0; /* Espaçamento acima e abaixo */
 }
 
 .botao-voltar a {
-    color: inherit; /* Usa a cor do botão para o texto */
-    text-decoration: none; /* Remove o sublinhado apenas neste botão */
+    color: inherit; /* Mantém a cor do botão */
+    text-decoration: none; /* Remove sublinhado */
 }
 
-/* Efeitos ao passar o mouse */
+/* Efeitos do botão */
 .botao-voltar:hover {
-    background-color: #e07600; /* Laranja mais escuro */
+    background-color: #e07600; /* Laranja mais escuro ao passar o mouse */
 }
 
-/* Efeitos ao clicar */
 .botao-voltar:active {
-    transform: translateY(1px); /* Volta ligeiramente */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduz a sombra */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduz a sombra ao clicar */
+    transform: translateY(1px); /* Simula o pressionamento */
 }
 
-/* Adiciona um efeito de foco visível para acessibilidade */
-a:focus {
-    outline: 3px dashed #007BFF;
-    outline-offset: 3px;
-}
-
-/* Ajustes para dispositivos menores */
+/* Responsividade para telas menores */
 @media (max-width: 768px) {
     .vinho-detalhes {
-        flex-direction: column; /* Empilha a imagem e o texto */
+        flex-direction: column; /* Empilha imagem e texto */
         align-items: center; /* Centraliza os itens */
         text-align: center; /* Centraliza o texto */
     }
 
     .imagem-vinho img {
-        max-width: 80%; /* Reduz o tamanho da imagem em telas menores */
-        margin-bottom: 20px; /* Adiciona espaçamento abaixo da imagem */
+        max-width: 80%; /* Ajusta imagem em telas pequenas */
+        margin-bottom: 20px;
     }
 
     .informacoes-vinho {
-        max-width: 100%; /* Garante que o texto ocupe toda a largura disponível */
+        max-width: 100%; /* Texto ocupa toda a largura */
     }
 
-    a {
-        width: 100%; /* Faz o botão ocupar toda a largura */
-        text-align: center;
-    }
     .botao-voltar {
-        width: 100%; /* O botão ocupa toda a largura */
-        padding: 12px; /* Aumenta o espaçamento */
-        font-size: 18px; /* Texto maior */
+        width: 100%; /* Botão ocupa toda a largura */
+        padding: 14px; /* Maior espaçamento em telas menores */
+        font-size: 18px; /* Aumenta o tamanho do texto */
     }
 }
 
 /* Ajustes para telas muito grandes */
 @media (min-width: 1200px) {
     .container {
-        padding: 40px; /* Aumenta o espaçamento em telas grandes */
+        padding: 40px; /* Aumenta o espaçamento geral */
     }
 
     .informacoes-vinho p {
-        font-size: 20px; /* Aumenta a legibilidade */
+        font-size: 20px; /* Texto maior para legibilidade */
     }
 }

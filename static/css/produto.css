@@ -52,6 +52,36 @@ a {
 }
 */
 
+.botao-voltar {
+    display: inline-block;
+    background-color: #FF8C00; /* Cor de fundo laranja */
+    color: #fff; /* Texto branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Arredonda os cantos */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra */
+    text-align: center;
+}
+
+.botao-voltar a {
+    color: inherit; /* Usa a cor do botão para o texto */
+    text-decoration: none; /* Remove o sublinhado apenas neste botão */
+}
+
+/* Efeitos ao passar o mouse */
+.botao-voltar:hover {
+    background-color: #e07600; /* Laranja mais escuro */
+}
+
+/* Efeitos ao clicar */
+.botao-voltar:active {
+    transform: translateY(1px); /* Volta ligeiramente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduz a sombra */
+}
 
 /* Adiciona um efeito de foco visível para acessibilidade */
 a:focus {
@@ -79,6 +109,11 @@ a:focus {
     a {
         width: 100%; /* Faz o botão ocupar toda a largura */
         text-align: center;
+    }
+    .botao-voltar {
+        width: 100%; /* O botão ocupa toda a largura */
+        padding: 12px; /* Aumenta o espaçamento */
+        font-size: 18px; /* Texto maior */
     }
 }
 

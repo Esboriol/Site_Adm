@@ -62,7 +62,7 @@
     left: 0; /* Remove o deslocamento */
     right: 0; /* Garante que o menu se estenda até o final da tela */
     transform: none; /* Remove a transformação para centralizar o menu corretamente */
-    width: 93%; /* Garante que o menu cubra toda a tela */
+    width: 93.5%; /* Garante que o menu cubra toda a tela */
     }
 
     .menu-toggle {

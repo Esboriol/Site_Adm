@@ -1,5 +1,5 @@
 .container {
-    width: 90%; /* Mantém boa largura em telas menores */
+    width: 80%; /* Mantém boa largura em telas menores */
     max-width: 1200px; /* Limite para telas grandes */
     margin: 0 auto;
     padding: 20px;

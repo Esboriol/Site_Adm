@@ -72,28 +72,6 @@ h1 {
     transform: translateY(0); /* Retorna à posição original */
 }
 
-.segundo {
-    background-color: rgb(187, 89, 60);
-    color: aliceblue;
-    text-align: center;
-    padding: 20px;
-    margin: 0;
-}
-
-.esquerda,
-.meio,
-.direito {
-    background-color: rgb(69, 38, 16);
-    color: #ffffff;
-    border: 2px solid #000000;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    margin: 10px;
-    width: 300px;
-    cursor: pointer;
-}
-
 .separator {
     width: 2px; /* Largura da barra */
     height: 20px; /* Altura da barra */
@@ -101,12 +79,6 @@ h1 {
     margin: 0 15px; /* Margem entre os links */
     display: inline-block; /* Faz a barra se comportar como um bloco inline */
 }
-
-.segundo button:hover {
-    background-color: #dddddd;
-}
-
-
 
 .sobre {
     position: relative;
@@ -175,11 +147,7 @@ h1 {
 
     .vinho img {
         max-width: 100%;
-        height: auto;
-    }
-
-    .segundo button {
-        width: 95%
+        max-height: 50  %;
     }
 
     .primeiro {

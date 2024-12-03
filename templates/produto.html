@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/cabecalho.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/botao.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/rodape.css') }}">
+    <link rel="stylesheet" href=" {{ url_for('static', filename='css/index.css') }}">
 </head>
 <body>
     <div class="logo-container">
@@ -25,6 +26,8 @@
             <li><a href="{{ url_for('cardapio')}}" class="cardapio">Cardapio</a></li>
             <div class="separator"></div>
             <li><a href="{{ url_for('contato')}}" class="contato">Contato</a></li>
+            <div class="separator"></div>
+            <li><a href="{{ url_for('inicial') }}" class="sobre">Sobre a Divinno</a></li>
         </ul>
     </div>
 

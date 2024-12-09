@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c93932cb-e373-4cd8-952d-6a090d905e63" name="Changes" comment=".">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/botao.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/botao.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/cabecalho.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/cabecalho.css" afterDir="false" />
-    </list>
+    <list default="true" id="c93932cb-e373-4cd8-952d-6a090d905e63" name="Changes" comment="." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +112,7 @@
       <workItem from="1733168826899" duration="303000" />
       <workItem from="1733757283582" duration="1337000" />
       <workItem from="1733758640201" duration="6925000" />
-      <workItem from="1733768632612" duration="3944000" />
+      <workItem from="1733768632612" duration="4596000" />
     </task>
     <task id="LOCAL-00001" summary="css">
       <option name="closed" value="true" />
@@ -159,16 +154,66 @@
       <option name="project" value="LOCAL" />
       <updated>1733768724034</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="css">
+      <option name="closed" value="true" />
+      <created>1733772764488</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733772764488</updated>
+    </task>
+    <task id="LOCAL-00007" summary="css">
+      <option name="closed" value="true" />
+      <created>1733772773201</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733772773201</updated>
+    </task>
+    <task id="LOCAL-00008" summary="html">
+      <option name="closed" value="true" />
+      <created>1733772784635</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733772784635</updated>
+    </task>
+    <task id="LOCAL-00009" summary="js">
+      <option name="closed" value="true" />
+      <created>1733772795873</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1733772795873</updated>
+    </task>
+    <task id="LOCAL-00010" summary="python">
+      <option name="closed" value="true" />
+      <created>1733772802554</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1733772802554</updated>
+    </task>
+    <task id="LOCAL-00011" summary=".">
+      <option name="closed" value="true" />
+      <created>1733772813133</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1733772813133</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="html" />
-    <MESSAGE value="css" />
     <MESSAGE value="img" />
+    <MESSAGE value="css" />
+    <MESSAGE value="html" />
+    <MESSAGE value="js" />
+    <MESSAGE value="python" />
     <MESSAGE value="." />
     <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/cabecalho.css') }}">
 </head>
 <body>
+
     <div class="logo-container">
         <div>
             <a href="{{ url_for('inicial')}}">
@@ -95,6 +96,58 @@
                 });
             }
         });
+        document.addEventListener('DOMContentLoaded', function () {
+        // Elementos relacionados ao pop-up
+        const overlay = document.getElementById('age-verification-overlay');
+        const yesButton = document.getElementById('yes-button');
+        const noButton = document.getElementById('no-button');
+
+        // Exibe o pop-up assim que a página é carregada
+        if (overlay) {
+            overlay.style.display = 'flex'; // Mostra o pop-up
+
+            // Botão "Sim" - permite acesso ao site
+            yesButton?.addEventListener('click', function () {
+                overlay.style.display = 'none'; // Esconde o pop-up
+            });
+
+            // Botão "Não" - redireciona para outro site
+            noButton?.addEventListener('click', function () {
+                window.location.href = 'https://www.google.com'; // Substitua pela URL desejada
+            });
+        }
+
+        // Animações de rolagem
+        const sections = document.querySelectorAll('.rotulo, .section');
+
+        // Detecta dispositivos móveis
+        const isMobileDevice = () => window.innerWidth <= 768;
+
+        const handleScroll = () => {
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 50) {
+                    section.classList.add('visible'); // Adiciona classe visível ao elemento
+                }
+            });
+        };
+
+        if (isMobileDevice()) {
+            // Em dispositivos móveis, torna todos os elementos visíveis automaticamente
+            sections.forEach(section => section.classList.add('visible'));
+        } else {
+            // Em dispositivos desktop, aplica a lógica de animação ao rolar
+            window.addEventListener('scroll', handleScroll);
+            handleScroll(); // Chamada inicial para animação ao carregar a página
+        }
+
+        // Animação para o slogan
+        const slogan = document.querySelector('.letra_imagem');
+        if (slogan) {
+            slogan.classList.add('visible'); // Adiciona classe visível ao slogan
+        }
+    });
+
 
         const mobileMenu = document.getElementById("mobile-menu");
         const navList = document.querySelector(".nav-list");

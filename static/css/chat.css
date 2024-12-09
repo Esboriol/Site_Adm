@@ -103,7 +103,6 @@ hr {
 .logo-content-rodape {
     display: flex; /* Usa flexbox para alinhar os itens */
     align-items: center; /* Alinha verticalmente os itens no centro */
-    justify-content: space-between; /* Espaça os itens */
     margin-bottom: 01px;
     padding: 10px;
     box-sizing: border-box;

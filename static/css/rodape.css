@@ -3,12 +3,14 @@ hr {
     height: 2px; /* Altura da linha */
     background-color: red; /* Cor da linha */
     margin: 20px 0; /* Margens superior e inferior */
+    width: 111.5%; /* Faz com que a linha ocupe 100% da largura da tela */
+    position: relative;
+    left: 0; /* Garante que a linha comece do lado esquerdo */
 }
 
 .logo-content-rodape {
     display: flex; /* Usa flexbox para alinhar os itens */
     align-items: center; /* Alinha verticalmente os itens no centro */
-    justify-content: space-between; /* Espaça os itens */
     margin-bottom: 01px;
     padding: 10px;
     background-color: #722F37;
@@ -28,18 +30,17 @@ hr {
 }
 
 .paragrafos {
-    display: inline-block; /* Permite que os parágrafos fiquem lado a lado */
-    width: 100%; /* Ajusta a largura do contêiner para que os parágrafos ocupem toda a linha */
+    display: flex; /* Usando flexbox para alinhar os parágrafos */
+    justify-content: space-between; /* Alinha os parágrafos nos extremos (esquerda e direita) */
+    width: 100%; /* Garante que o contêiner ocupe 100% da largura da tela */
+    align-items: center; /* Alinha os itens verticalmente no centro */
 }
 
 .paragrafos p {
-    display: inline; /* Coloca os parágrafos lado a lado */
     color: white;
-    margin-right: 300px; /* Espaço entre os parágrafos (opcional) */
-}
-
-.paragrafos p:last-child {
-    margin-right: 0;
+    margin: 0; /* Remove margens extras */
+    flex: 1; /* Faz com que cada parágrafo ocupe o mesmo espaço */
+    text-align: center; /* Alinha o texto ao centro */
 }
 
 .visivel {
@@ -47,7 +48,6 @@ hr {
 }
 
 @media (max-width: 768px) {
-
     .visivel {
         display: none;
     }

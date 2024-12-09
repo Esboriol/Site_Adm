@@ -132,7 +132,7 @@ hr {
 .paragrafos p {
     display: inline; /* Coloca os parágrafos lado a lado */
     color: white;
-    margin-right: 300px; /* Espaço entre os parágrafos (opcional) */
+    margin-right: 300px;
 }
 
 .paragrafos p:last-child {

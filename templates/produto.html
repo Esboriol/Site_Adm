@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ vinho.nome }}</title>
+    <link rel="icon" href="../static/img/Logo-1.png" type="image/x-icon">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/produto.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/cabecalho.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/botao.css') }}">
@@ -23,11 +24,12 @@
             <span class="bar"></span>
         </div>
         <ul class="nav-list">
+            <li><a href="{{ url_for('inicial') }}" class="sobre">Sobre a Divinno</a></li>
+            <div class="separator"></div>
             <li><a href="{{ url_for('cardapio')}}" class="cardapio">Cardapio</a></li>
             <div class="separator"></div>
             <li><a href="{{ url_for('contato')}}" class="contato">Contato</a></li>
-            <div class="separator"></div>
-            <li><a href="{{ url_for('inicial') }}" class="sobre">Sobre a Divinno</a></li>
+
         </ul>
     </div>
 
@@ -47,9 +49,9 @@
                 <p><strong>Preço:</strong> R$ {{ vinho.preco }}</p>
             </div>
         </div>
-        <button class="botao-voltar">
-            <a href="/cardapio">Voltar ao Cardápio</a>
-        </button>
+        <a href="{{ url_for('cardapio') }}">
+            <button class="botao-voltar">Voltar</button>
+        </a>
     </div>
 
     <div class="logo-content-rodape">

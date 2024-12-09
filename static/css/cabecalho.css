@@ -36,18 +36,6 @@
     display: inline-block; /* Faz a barra se comportar como um bloco inline */
 }
 
-.nav-list li {
-    list-style-type: none; /* Remove os marcadores padrão */
-    margin: 0 20px; /* Espaçamento entre os itens da lista */
-}
-
-.nav-list a {
-    text-decoration: none; /* Remove o sublinhado do link */
-    color: #000; /* Cor do texto do link */
-    font-weight: bold; /* Opcional: Deixa o texto mais destacado */
-    color: white;
-}
-
 .logo {
     max-width: 100px;
     height: auto;

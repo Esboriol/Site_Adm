@@ -12,6 +12,7 @@ model = genai.GenerativeModel('gemini-1.5-flash')
 
 app = Flask(__name__)
 
+
 vinhos = [
     {
     "nome": "MIOLO RESERVA PINOT GRIGIO",
